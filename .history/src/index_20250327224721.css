@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-roboto: "Roboto", sans-serif; 
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --color-soft-primary: #B2C4FB; 
+  --color-light-primary: #053ADA; 
+  --color-dark-primary: #032691; 
+  --color-deep-primary: #021655; 
+  --color-soft-secondary: #FFFFFF; 
+  --color-light-secondary: #B1B1B1; 
+  --color-dark-secondary: #263238; 
+  --color-deep-secondary: #000000; 
+}
