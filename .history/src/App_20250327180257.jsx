@@ -6,7 +6,7 @@ const App = () => {
     <h1 className="text-3xl font-light underline font-roboto text-soft-primary">Hello, Tailwind CSS!</h1>
     <h1 className="text-3xl font-normal underline font-roboto text-light-primary">Hello, Tailwind CSS!</h1>
     <h1 className="text-3xl font-semibold underline font-roboto text-dark-primary">Hello, Tailwind CSS!</h1>
-    <h1 className="text-3xl font-bold underline font-roboto text-deep-primary">Hello, Tailwind CSS!</h1>
+    <h1 className="text-3xl font-bold underline font-roboto text-deep-blue">Hello, Tailwind CSS!</h1>
   </div>
   )
 }

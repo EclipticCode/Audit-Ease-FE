@@ -9,13 +9,13 @@
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
-  --color-soft-primary: #B2C4FB; 
-  --color-light-primary: #053ADA; 
-  --color-dark-primary: #032691; 
-  --color-deep-primary: #021655; 
+  --color-soft-blue: #B2C4FB; 
+  --color-light-blue: #053ADA; 
+  --color-dark-blue: #032691; 
+  --color-deep-blue: #021655; 
   --color-soft-seconday: #FFFFFF; 
   --color-light-seconday: #B1B1B1; 
   --color-dark-seconday: #263238; 
-  --color-deep-seconday: #000000; 
+  --color-deep-seconday: #263238; 
 
 }
