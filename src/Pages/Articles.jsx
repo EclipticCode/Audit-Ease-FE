@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { apiUrl } from './constants'
+import ArticlesPieChart from '../../ArticlesPieChart'
 
 
 const Articles = () => {
@@ -127,7 +128,7 @@ useEffect(() => {
           </table>
         </div>
       </div>
-      <div className='bg-soft-secondary m-8 rounded-xl drop-shadow-lg'>pie chart</div>
+      <div className='bg-soft-secondary m-8 rounded-xl drop-shadow-lg'><ArticlesPieChart/></div>
     </div>
        </div>
    

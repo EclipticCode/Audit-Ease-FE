@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { apiUrl } from './constants'
 import Card from '../../Card'
+import UpcomingEventsDashboard from '../UpcomingEventsDashboard'
+import DueFeesDashboard from '../DueFeesDashboard'
 
 const cardData = [
   { title: "Total Audits", value: "150" , percentage:"1.24"},
@@ -45,56 +47,28 @@ useEffect(() => {
           </div>
         </div>
       ))}
+
     </div>
         <div className='grid grid-cols-3 gap-4'>
-          <div  className='bg-soft-secondary m-8 rounded-md col-span-2 drop-shadow-lg'>total audits</div>
+          <div  className='bg-soft-secondary m-8 rounded-md col-span-2 drop-shadow-lg'>
+            <div>Weekly Activity</div>
+            <div>grapg</div>
+          </div>
           <div  className='bg-soft-secondary m-8 rounded-md drop-shadow-lg'>
             <div>Expense Statistics</div>
             <div>Pie Chart</div>
           </div>
         </div>
 
-        <div className='grid grid-cols-3 gap-4'>
-          <div  className='bg-soft-secondary m-8 rounded-md col-span-2 drop-shadow-lg'>total audits</div>
-          
-          <div  className='bg-soft-secondary m-8 rounded-md drop-shadow-lg '>
-            <div className='m-4'>Upcoming Events</div>
-            <div className='w-full mt-10 mb-16 text-sm'>
-
-            <table className='table-fixed'>
-            <thead>
-              <tr className='text-dark-secondary'>
-              <th  className='px-8'>
-                  
-                </th>
-                <th  className='px-8 py-4'>
-                  Events
-                </th>
-                <th  className='px-36'>
-                  Date
-                </th>
-                </tr>
-            </thead>
-            <tbody className='pt-10 text-semibold'>
-              {/* {
-                upcomingEvents.map(eachEvent => (
-                  <tr key={eachEvent._id} className='border-b-3 border-bg-primary'>
-                    <td  className='px-8 py-4'>{eachEvent.no}</td>
-                    <td  className='px-8 py-4'>{eachEvent.events}</td>
-                    <td  className='px-8 py-4'>{eachEvent.companyName}</td>
-                    <td  className='px-8 '>{eachEvent.date}</td>
-                    
-                  </tr>
-                ))
-              } */}
-            </tbody>
-          </table>
-        </div>
-      </div>
+        <div className='grid grid-cols-3'>
+          <div  className='bg-soft-secondary m-6 rounded-md col-span-2 drop-shadow-lg'>
+            <div><DueFeesDashboard/></div>
+          </div>
+          <div  className='bg-soft-secondary m-6 rounded-md drop-shadow-lg'>
+            <div><UpcomingEventsDashboard/></div>
           </div>
         </div>
-        
-       
+      </div>
   )
 }
 

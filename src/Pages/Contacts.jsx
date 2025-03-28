@@ -12,7 +12,7 @@ useEffect(() => {
   const fetchContacts = async () => {
     try {
       const response = await axios.get(`${apiUrl}/getContacts`);
-      // console.log("response from DB:", response.data);
+      console.log("response from DB:", response.data);
       setContacts(response.data); 
     } catch (error) {
       console.error("Error while fetching the data", error);
