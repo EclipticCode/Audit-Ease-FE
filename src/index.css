@@ -19,4 +19,7 @@
   --color-dark-secondary: #263238; 
   --color-deep-secondary: #000000; 
   --color-bg-navbar: #F5F7FA; 
+  --color-completed: #00F600; 
+  --color-inprogress: #FFB800; 
+  --color-pending: #FF0000; 
 }

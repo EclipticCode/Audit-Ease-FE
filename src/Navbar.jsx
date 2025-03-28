@@ -1,14 +1,22 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+  const location = useLocation()
+  const pageTitles = {
+    '/': 'Overview',
+    '/audits': 'Audits',
+    '/clients': 'Clients',
+    '/articles': 'Articles',
+    '/contacts': 'Contacts',
+  };
   return (
     <div className='m-8'>
         <div className='flex flex-row justify-between'>
             <div className='flex'>
             <span><i className="bi bi-check-circle pr-2"></i></span>
             <div className='font-bold text-lg text-dark-primary'>Audit Ease.</div>
-            <div className='ml-16 font-bold text-lg text-dark-primary'>Dynamic content</div>
+            <div className='ml-16 font-bold text-lg text-dark-primary'>{pageTitles[location.pathname] || 'Dashboard'}</div>
             </div>
             <div className='flex space-x-4'>
             <div className="bg-gray-200 flex items-center justify-center rounded-full text-xs pl-3 pr-8 py-4 w-auto h-4 text-soft-primary"> 

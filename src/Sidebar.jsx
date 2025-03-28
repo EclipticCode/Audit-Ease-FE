@@ -7,7 +7,7 @@ const Sidebar = () => {
        <div>
          <div className=' text-light-secondary mt-6'>
              <div className='mb-6'>
-             <button>
+             <button >
              <span><i className="fa-solid fa-house mr-4 text-lg"></i></span><span className='font-semibold text-sm'>
                  <Link to={`/`}>Dashboard</Link>
                  </span></button>
