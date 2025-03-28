@@ -1,0 +1,1 @@
+export const apiUrl = "https://audit-ease-be-7.onrender.com"
