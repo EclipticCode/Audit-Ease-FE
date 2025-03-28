@@ -1,86 +1,24 @@
 import React from 'react'
-import profile from './assets/Profile.jpeg'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div className=''>
-         <header className="bg-white">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center  p-6 lg:px-8">
-        <div className="flex lg:flex-1 text-2xl font-semibold">
-          <span><i className="bi bi-check-circle"></i></span>
-          <span className="">Audit Ease</span>
-          <span className='mx-3'>dynamic conetnt</span>
-        </div>
-        <div className="lg:flex lg:flex-1 lg:justify-end">
-        <div className='flex space-x-3'>
-        <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            <span><i className="bi bi-search"></i></span>
-            Search for something
-          </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
-          <button className=''><i className="bi bi-gear"></i></button>
-          </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
-          <i className="bi bi-bell"></i>
-          </a>
-          <a href="#" className="text-sm/6 w-8 h-8 rounded-3xl">
-            <img src={profile} alt="" />
-          </a>
-        </div>
-        </div>
-      </nav>
-
-        <div className="fixed inset-0 z-10" />
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Dashboard
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Audits
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Clients
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Articles
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Contact
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Settings
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Logout
-                </a>
-              </div>
+    <div className='m-8'>
+        <div className='flex flex-row justify-between'>
+            <div className='flex'>
+            <span><i className="bi bi-check-circle pr-2"></i></span>
+            <div className='font-bold text-lg text-dark-primary'>Audit Ease.</div>
+            <div className='ml-16 font-bold text-lg text-dark-primary'>Dynamic content</div>
             </div>
-          </div>
-    
-    </header>
+            <div className='flex space-x-4'>
+            <div className="bg-gray-200 flex items-center justify-center rounded-full text-xs pl-3 pr-8 py-4 w-auto h-4 text-soft-primary"> 
+              <span><i className="bi bi-search pr-4"></i></span> <span>Search for something</span>
+            </div>
+            <div className="bg-bg-navbar flex items-center justify-center rounded-full text-lg p-4 w-8 h-4  text-soft-primary"><i className="bi bi-gear"></i></div>
+            <div className="bg-bg-navbar flex items-center justify-center rounded-full text-md p-4 w-8 h-4 text-red-400"><i className="bi bi-bell"></i></div>
+            <div className="bg-bg-navbar flex items-center justify-center rounded-full text-xs p-4 w-auto h-4 text-soft-primary">profile</div>
+            </div>
+        </div>
     </div>
   )
 }
