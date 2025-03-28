@@ -94,7 +94,7 @@ useEffect(() => {
               <span className='border-1 border-light-secondary px-16 text-light-secondary rounded-sm'></span></div>
           </div>
         </div>
-        <div className='w-full mt-10 mb-16 pb-8 text-sm'>
+        <div className='w-full mt-10 mb-16 text-sm'>
           <table className='table-fixed'>
             <thead>
               <tr className='bg-soft-primary text-dark-secondary'>
