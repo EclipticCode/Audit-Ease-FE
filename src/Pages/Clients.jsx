@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import AreaChart from '../../ClientsAreaChart'
-import ClientsAreaChart from '../../ClientsAreaChart'
+import AreaChart from '../ClientsAreaChart'
+import ClientsAreaChart from '../ClientsAreaChart'
 import ClientRating from '../ClientRating'
 import ClientRetention from '../ClientRetention'
 

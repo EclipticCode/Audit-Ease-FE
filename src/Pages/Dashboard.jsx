@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { apiUrl } from './constants'
-import Card from '../../Card'
+import Card from '../Card'
 import UpcomingEventsDashboard from '../UpcomingEventsDashboard'
 import DueFeesDashboard from '../DueFeesDashboard'
 import WeeklyActivity from '../WeeklyActivity'
@@ -51,8 +51,8 @@ useEffect(() => {
       ))}
 
     </div>
-        <div className='grid grid-cols-3 gap-4'>
-          <div  className='bg-soft-secondary m-8 rounded-lg col-span-2 drop-shadow-lg'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-4'>
+          <div  className='bg-soft-secondary m-8 rounded-lg lg:col-span-2 drop-shadow-lg'>
             <WeeklyActivity/>
           </div>
           <div  className='bg-soft-secondary m-8 rounded-lg drop-shadow-lg'>
@@ -60,8 +60,8 @@ useEffect(() => {
           </div>
         </div>
 
-        <div className='grid grid-cols-3'>
-          <div  className='bg-soft-secondary m-6 rounded-lg col-span-2 drop-shadow-lg'>
+        <div className='grid grid-cols-1 lg:grid-cols-[55%_45%]'>
+          <div  className='bg-soft-secondary m-6 rounded-lg drop-shadow-lg'>
             <div><DueFeesDashboard/></div>
           </div>
           <div  className='bg-soft-secondary m-6 rounded-lg drop-shadow-lg'>

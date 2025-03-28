@@ -39,7 +39,7 @@ const renderCustomizedLabel = (props) => {
 
 const WeeklyActivity = () => {
   return (
-    <div className="w-full max-w-[800px] mx-auto p-3 bg-white rounded-lg shadow-md h-[250px] flex flex-col">
+    <div className="w-full max-w-[800px] mx-auto p-3 h-[250px] flex flex-col">
         <div className="flex justify-between items-center text-deep-primary font-semibold p-2">
             <div>Weekly Activity</div>
         </div>
