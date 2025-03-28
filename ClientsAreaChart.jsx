@@ -12,8 +12,11 @@ const data = [
 
 const ClientsAreaChart = () => {
     return (
-            <div  className="w-full min-h-[300px] md:min-h-[400px]">
-              <ResponsiveContainer width={400} height={200}>
+      <div>
+      <div className='bg-soft-secondary m-8 rounded-xl drop-shadow-lg w-full min-h-[270px] flex flex-col'>
+          <div className='text-dark-primary font-semibold p-4'>Clients satisfcation level</div>
+          <div  className="flex-grow w-full h-[270px]">
+              <ResponsiveContainer width='100%' height='100%'>
               <AreaChart
                 width={500}
                 height={400}
@@ -33,6 +36,9 @@ const ClientsAreaChart = () => {
               </AreaChart>
             </ResponsiveContainer>
             </div>
+      </div>
+    </div>
+           
           );
       }
     
