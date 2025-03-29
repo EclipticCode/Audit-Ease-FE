@@ -30,10 +30,11 @@ useEffect(() => {
           </div>
       </div>
     </div>
-    <div className="w-full mt-6 text-sm overflow-x-auto">
+    <div className="w-full mt-6 text-sm text-gray-700 overflow-x-auto">
     <table className="table-auto w-full border-collapse">
       <thead>
         <tr className="text-dark-secondary">
+          <th className="px-4 py-2 text-left"></th>
           <th className="px-4 py-2 text-left"></th>
           <th className="px-4 py-2 text-left">Name of the Client</th>
           <th className="px-4 py-2 text-left">Name of the Company/Firm</th>
@@ -43,7 +44,12 @@ useEffect(() => {
       <tbody className="text-sm">
         {dueFeesData.map((eachData, index) => (
           <tr key={eachData._id} className="">
-            <td className="px-4 py-2">{index + 1}</td>
+            <td className="px-4 py-2">{eachData.sNo}</td>
+            <td className="px-4 py-2"><img
+          src={eachData.imageUrl}
+          alt="Client"
+          className="w-8 h-8 rounded-full object-cover border border-gray-300"
+        /></td>
             <td className="px-4 py-2">{eachData.clientName}</td>
             <td className="px-4 py-2">{eachData.firmName}</td>
             <td className="px-4 py-2">{eachData.dueAmount}</td>

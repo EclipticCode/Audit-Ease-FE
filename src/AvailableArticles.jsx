@@ -34,6 +34,7 @@ fetchData()
                     <thead className='bg-soft-primary text-sm'>
                         <tr>
                             <th className="px-2 py-2 text-center">No.</th>
+                            <th className="px-2 py-2 text-center"></th>
                             <th className="px-2 py-2 text-center">Name</th>
                             <th className="px-2 py-2 text-center">E-mail</th>
                         </tr>
@@ -42,6 +43,11 @@ fetchData()
                         {articlesData.map(eachData => (
                             <tr key={eachData._id} className='border-b-3 border-bg-primary text-sm text-gray-700'>
                                 <td className='px-2 py-2 text-center'>{eachData.sNo}</td>
+                                <td className='px-2 py-2 text-center'><img
+          src={eachData.imageUrl}
+          alt="Client"
+          className="w-6 h-6 rounded-full object-cover border border-gray-300"
+        /></td>
                                 <td className='px-2 py-2 text-center'>{eachData.name}</td>
                                 <td className='px-2 text-center'>{eachData.email}</td>
                             </tr>
