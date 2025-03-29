@@ -20,7 +20,7 @@ useEffect( ()=>{
 },[])
 
   return (
-    <div><div className="bg-soft-secondary rounded-xl p-2 min-h-[400px]">
+    <div><div className="bg-soft-secondary rounded-xl p-2 min-h-[400px] font-roboto">
     <div className="m-2 text-sm font-semibold text-deep-primary">Upcoming Events</div>
 
       <div className="w-full text-sm overflow-x-auto">

@@ -20,7 +20,7 @@ fetchClientsData()
 
   return (
     <div>
-        <div className='bg-soft-secondary m-8 rounded-xl drop-shadow-lg'>
+        <div className='bg-soft-secondary m-8 rounded-xl drop-shadow-lg font-roboto'>
             <div className='text-dark-primary font-semibold p-4'>Client Rating</div>
             <div className='overflow-x-auto'>
                 <table className='w-full border-collapse pt-2'>

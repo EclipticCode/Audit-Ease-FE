@@ -11,7 +11,7 @@ const Navbar = () => {
     '/contacts': 'Contacts',
   };
   return (
-    <div className='m-4 sm:m-6 md:m-8'>
+    <div className='m-4 sm:m-6 md:m-8 font-roboto'>
         <div className='flex flex-wrap items-center justify-between'>
             <div className='flex items-center flex-wrap'>
             <span><i className="bi bi-check-circle pr-2"></i></span>

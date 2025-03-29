@@ -1,5 +1,4 @@
 import React from 'react'
-import Login from '../Login'
 import Navbar from './Navbar'
 import Dashboard from './Pages/Dashboard'
 import Audits from './Pages/Audits'
@@ -8,6 +7,7 @@ import Clients from './Pages/Clients'
 import Contacts from './Pages/Contacts'
 import { Route, Routes } from 'react-router-dom'
 import Layout from './Layout'
+import Settings from './Pages/Settings'
 
 const App = () => {
   return (
@@ -20,6 +20,7 @@ const App = () => {
           <Route path='/articles' element={<Articles/>}></Route>
           <Route path='/clients' element={<Clients/>}></Route>
           <Route path='/contacts' element={<Contacts/>}></Route>
+          <Route path='/settings' element={<Settings/>}></Route>
         </Route>
       </Routes>
    </div>

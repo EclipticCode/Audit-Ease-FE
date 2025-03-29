@@ -2,8 +2,7 @@ import React, { PureComponent } from 'react';
 import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
 
 const data = [
-    { name: 'Office Expenses', value: 350 },
-  
+  { name: 'Office Expenses', value: 350 },
   { name: 'Software & Technology', value: 200 },
   { name: 'Personal Expenses', value: 300 },
   { name: 'Other', value: 150 },
@@ -30,10 +29,10 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 
 const ExpenseStatistics = () => {
   return (
-    <div className='p-2'>
+    <div className='p-2 font-roboto'>
         <div className="flex justify-between items-center text-deep-primary font-semibold">Expense Statistics</div>
         <div>
-            <div className='text-sm font-semibold text-gray-950'>
+            <div className='text-xs font-semibold text-gray-950'>
                     <ResponsiveContainer width={400} height={200}>
                     <PieChart width={400} height={400}>
                       <Pie

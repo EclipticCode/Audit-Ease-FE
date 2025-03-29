@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import axios from 'axios'
 import { apiUrl } from './Pages/constants'
 
@@ -21,7 +20,7 @@ useEffect(() => {
 },[])
 
   return (
-    <div className="bg-soft-secondary rounded-xl p-4">
+    <div className="bg-soft-secondary rounded-xl p-4 font-roboto">
     <div className="flex justify-between items-center">
       <div className='font-semibold text-sm text-dark-primary w-full'>Due Fess</div>
       <div>

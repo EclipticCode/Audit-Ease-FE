@@ -1,28 +1,24 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import AreaChart from '../ClientsAreaChart'
-import ClientsAreaChart from '../ClientsAreaChart'
-import ClientRating from '../ClientRating'
-import ClientRetention from '../ClientRetention'
+import React from "react";
+import ClientsAreaChart from "../ClientsAreaChart";
+import ClientRating from "../ClientRating";
+import ClientRetention from "../ClientRetention";
 
 const Clients = () => {
   return (
-    
-       <div>
-        <div className='bg-soft-secondary m-8 rounded-xl'>
-            <ClientRetention/>
+    <div>
+      <div className="bg-soft-secondary m-8 rounded-xl font-roboto drop-shadow-lg">
+        <ClientRetention />
+      </div>
+      <div className="grid sm:grid-cols-1 lg:grid-cols-[55%_45%] gap-2">
+        <div className="">
+          <ClientsAreaChart />
         </div>
-        <div className='grid grid-cols-[55%_45%] gap-4'>
-          <div className=''>
-            <ClientsAreaChart/>
-          </div>
-          <div className=''>
-            <ClientRating/>
-          </div>
+        <div className="">
+          <ClientRating />
         </div>
-       </div>
-    
-  )
-}
+      </div>
+    </div>
+  );
+};
 
-export default Clients
+export default Clients;

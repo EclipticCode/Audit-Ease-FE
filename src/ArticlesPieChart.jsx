@@ -1,4 +1,3 @@
-import React, { PureComponent } from 'react';
 import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
 
 const data = [
@@ -24,16 +23,18 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 
 const ArticlesPieChart = () => {
   return (
-    <div className='text-sm font-semibold text-gray-950'>
-        <ResponsiveContainer width={400} height={200}>
-        <PieChart width={400} height={400}>
+    <div>
+      <div className='bg-soft-secondary m-8 rounded-xl drop-shadow-lg min-h-[280px] flex flex-col font-roboto'>
+    <div className='text-sm font-semibold text-gray-950 font-roboto w-full flex items-center justify-center'>
+        <ResponsiveContainer width={300} height={280}>
+        <PieChart>
           <Pie
             data={data}
             cx="50%"
             cy="50%"
             labelLine={false}
             label={renderCustomizedLabel}
-            outerRadius={80}
+            outerRadius={100}
             fill="#8884d8"
             dataKey="value"
           >
@@ -43,6 +44,8 @@ const ArticlesPieChart = () => {
           </Pie>
         </PieChart>
       </ResponsiveContainer>
+    </div>
+    </div>
     </div>
   )
 }

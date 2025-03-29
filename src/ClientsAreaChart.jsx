@@ -13,7 +13,7 @@ const data = [
 const ClientsAreaChart = () => {
     return (
       <div>
-      <div className='bg-soft-secondary m-8 rounded-xl drop-shadow-lg w-full min-h-[270px] flex flex-col'>
+      <div className='bg-soft-secondary m-8 rounded-xl drop-shadow-lg min-h-[270px] flex flex-col font-roboto'>
           <div className='text-dark-primary font-semibold p-4'>Clients satisfcation level</div>
           <div  className="flex-grow w-full h-[270px]">
               <ResponsiveContainer width='100%' height='100%'>
@@ -27,6 +27,7 @@ const ClientsAreaChart = () => {
                   left: 0,
                   bottom: 0,
                 }}
+                
               >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />

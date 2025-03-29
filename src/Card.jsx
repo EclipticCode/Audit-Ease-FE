@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = ({title , value , percentage}) => {
   return (
-    <div className='m-4'>
+    <div className='m-4 font-roboto'>
         <div className='font-semibold text-deep-primary'><h2>{title}</h2></div>
         <div className='flex flex-row justify-between'>
             <div className='text-2xl font-bold text-light-primary mt-2'>{value}</div>
